@@ -1,8 +1,6 @@
-
 import random
 
 answer = random.randint(1,100)
-#is it enough?
 # Author : LeeHyungi0622
 # Issue : #2
 # Date : 2021/01/30 
