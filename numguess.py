@@ -20,5 +20,9 @@ if guess == answer:
     # To concatenate the answer value with prompt message, casting the answer value as string value.
 	print("Correct! The answer was ", str(answer))
 else:
-    # To concatenate the answer value with prompt message, casting the answer value as string value.
-	print("That's not what I wanted!! The answer was ", str(answer))
+    # Make a hint for user ( up & down)
+    if guess > answer:
+        print("Incorrect!, enter lower number.")
+    else:
+        print("Incorrect!, enter higher number.")
+
