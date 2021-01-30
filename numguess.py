@@ -24,9 +24,14 @@ for i in range(1, chance+1):
     	# To concatenate the answer value with prompt message, casting the answer value as string value.
 		print("Correct! The answer was ", str(answer))
 		break
-	elif chance>i:
+	elif chance>i:    
+# Make a hint for user ( up & down)
+		if guess > answer:
+			print("Incorrect!, enter lower number.")
+		else:
+			print("Incorrect!, enter higher number.")
 	# Formatted to show the chances left.
-		print("Try again! You have {} time(s) left.".format(chance-i))
+		print("You have {} time(s) left.".format(chance-i))
 	else:
     	# To concatenate the answer value with prompt message, casting the answer value as string value.
 		print("That's not what I wanted!! The answer was ", str(answer))
